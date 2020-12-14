@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurnia's Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="light-theme.css" id="theme-link">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -17,7 +17,7 @@
     <!-- Header -->
     <header>
         <div class="container text-center">
-            <button onclick="myFunction()">Toggle dark mode</button>
+            <button class="btn-toggle">Toggle Dark-Mode</button>
             <div class="user-box">
                 <img src="/assets/foto.jpg">
                 <h1>Kurnia Elmstedt</h1>
@@ -268,7 +268,7 @@
         <!-- Contact -->
         <section class="contact" id="contact">
             <div class="container text-center">
-                <h1>Contact me</h1>
+                <h3>Contact me</h3>
                 <div class="row">
                     <div class="col-md-4">
                         <i class="fa fa-phone"></i><br>
@@ -284,9 +284,9 @@
                                 website</a></p>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-download"></i><a
+                <button type="button" class="btn btn-primary"><i class="fa fa-download"></i><a class="btn-contact"
                         href="assets/Kurnia CV.pdf" download> Resume</button>
-                <button type="button" class="btn btn-primary"><i class="fa fa-rocket"></i><a
+                <button type="button" class="btn btn-primary"><i class="fa fa-rocket"></i><a class="btn-contact"
                         href="mailto:kurniasuryani@gmail.com">Hire me</a></button>
             </div>
             <footer class="text-center">
@@ -296,10 +296,23 @@
     </section>
 
     <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
+        // Select the button
+        const btn = document.querySelector(".btn-toggle");
+        // Select the stylesheet <link>
+        const theme = document.querySelector("#theme-link");
+
+        // Listen for a click on the button
+        btn.addEventListener("click", function() {
+            // If the current URL contains "ligh-theme.css"
+            if (theme.getAttribute("href") == "light-theme.css") {
+                // ... then switch it to "dark-theme.css"
+                theme.href = "dark-theme.css";
+                // Otherwise...
+            } else {
+                // ... switch it to "light-theme.css"
+                theme.href = "light-theme.css";
+            }
+        });
     </script>
 </body>
 

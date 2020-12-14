@@ -420,6 +420,7 @@ footer img {
 }
 
 .dark-mode {
-    background-color: black;
-    color: white;
+    background: rgb(36, 33, 33);
+    color: #FFFBEE;
+    background-image: rgb(36, 33, 33);
 }
