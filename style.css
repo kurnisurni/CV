@@ -70,11 +70,17 @@ header {
 }
 
 /* About */
+
 .about {
     padding-top: 100px;
-    /*padding-bottom: 50px;*/
-    margin-bottom: -130px;
-    font-family: 'Mada', sans-serif;
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 769px) {
+.about {
+    padding-top: 100px;
+    padding-bottom: 50px;    
+}
 }
 
 .about h3 {
@@ -123,23 +129,14 @@ header {
     color: white !important;
 }
 
-.skills-bar p {
-    margin-bottom: 6px;
-    font-weight: 600;
-}
-
-.progress {
-    border-radius: 16px !important;
-    margin-bottom: 10px;
-}
-
-.progress-bar {
-    border-radius: 16px;
-    background: black !important;
-}
-
 /* Social media */
 .social-icons {
+    display: none;
+}
+
+@media screen and (min-width: 769px) {
+.social-icons {
+    display: block;
     top: 50%;
     transform: translateY(-50%);
     position: sticky;
@@ -167,6 +164,7 @@ header {
     width: 80px;
     transition: 1s;
 }
+}
 
 
 /* Resume */
@@ -179,6 +177,8 @@ header {
 
 .resume h3 {
     margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .timeline {
@@ -188,7 +188,7 @@ header {
 
 .timeline:before {
     content: '';
-    background: purple;
+    background: #0072b5;
     display: inline-block;
     position: absolute;
     left: 29px;
@@ -203,15 +203,15 @@ header {
 }
 
 .timeline li h4 {
-    background-color: black;
+    background-color: #0072b5;
     padding: 5px 0 5px 20px;
     color: white;
-    font-size: 15px;
+    font-size: 1.1rem;
 }
 
 .timeline li h4 span {
     font-weight: bold;
-    color: #ccc;
+    color: #FFFBEE;
 }
 
 .timeline li:before {
@@ -220,11 +220,42 @@ header {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid #0072b5;
     left: 20px;
     width: 20px;
     height: 20px;
     z-index: 1;
+}
+
+.competences {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.competences h4 {
+    border: 2px solid #0072b5;
+    padding: 5px;
+    background: #0072b5;
+    text-align: center;
+    color: #FFFBEE;
+    font-size: 1.1rem;
+}
+
+.skills-bar p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.progress {
+    border-radius: 16px !important;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    border-radius: 16px;
+    background: #0072b5 !important;
 }
 
 /* Contact */
