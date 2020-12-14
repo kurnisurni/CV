@@ -353,7 +353,7 @@ header {
 /* Contact */
 
 .contact {
-    padding-top: 50px;
+    padding-top: 100px;
     background-color: #FFFBEE;
     background-image: linear-gradient(#FFFBEE, #0072b5);
     color: darkslategray;
@@ -419,8 +419,7 @@ footer img {
     color: red;
 }
 
-.dark-mode {
-    background: rgb(36, 33, 33);
-    color: #FFFBEE;
-    background-image: rgb(36, 33, 33);
+.btn-toggle {
+    float: right;
+    margin: 20px;
 }

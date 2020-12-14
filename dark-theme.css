@@ -362,7 +362,7 @@ header {
 /* Contact */
 
 .contact {
-    padding-top: 50px;
+    padding-top: 100px;
     background-color: #232B32;
     color: #f5f2e7;
 }
@@ -434,4 +434,9 @@ footer img {
 
 .fa-heart-o {
     color: red;
+}
+
+.btn-toggle {
+    float: right;
+    margin: 20px;
 }

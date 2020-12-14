@@ -17,7 +17,7 @@
     <!-- Header -->
     <header>
         <div class="container text-center">
-            <button class="btn-toggle">Toggle Dark-Mode</button>
+            <button class="btn-toggle btn"><i class="fas fa-moon"></i>/<i class="fas fa-sun"></i></button>
             <div class="user-box">
                 <img src="/assets/foto.jpg">
                 <h1>Kurnia Elmstedt</h1>
@@ -295,25 +295,7 @@
         </section>
     </section>
 
-    <script>
-        // Select the button
-        const btn = document.querySelector(".btn-toggle");
-        // Select the stylesheet <link>
-        const theme = document.querySelector("#theme-link");
-
-        // Listen for a click on the button
-        btn.addEventListener("click", function() {
-            // If the current URL contains "ligh-theme.css"
-            if (theme.getAttribute("href") == "light-theme.css") {
-                // ... then switch it to "dark-theme.css"
-                theme.href = "dark-theme.css";
-                // Otherwise...
-            } else {
-                // ... switch it to "light-theme.css"
-                theme.href = "light-theme.css";
-            }
-        });
-    </script>
+    <script src="theme.js"></script>
 </body>
 
 </html>
