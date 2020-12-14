@@ -32,13 +32,6 @@ header {
     height: 150px;
 }
 
-@media screen and (min-width: 600px) {
-    .user-box img {
-        width: 250px;
-        height: 250px;
-    }
-}
-
 .user-box h1 {
     font-weight: bold;
     margin: 30px 10px 10px 10px;
@@ -56,6 +49,10 @@ header {
 }
 
 @media screen and (min-width: 600px) {
+    .user-box img {
+        width: 250px;
+        height: 250px;
+    }
     .user-box h1 {
         margin: 20px;
         font-size: 2.2rem;
@@ -64,9 +61,6 @@ header {
         font-size: 1.2rem;
         font-weight: 600;
     }
-}
-
-@media screen and (min-width: 600px) {
     .scroll-btn {
         bottom: 30px;
         position: absolute;
@@ -104,23 +98,10 @@ header {
     padding-bottom: 20px;
 }
 
-@media screen and (min-width: 600px) {
-    .about {
-        padding-bottom: 50px;
-    }
-}
-
 .about h3 {
     text-align: center;
     font-weight: bold;
     margin: 30px auto 15px;
-}
-
-@media screen and (min-width: 600px) {
-    .about h3 {
-        margin: auto;
-        margin-bottom: 15px;
-    }
 }
 
 .about p {
@@ -132,12 +113,25 @@ header {
     border: thick solid rgba(0, 0, 0, 0.411);
 }
 
+@media screen and (min-width: 600px) {
+    .about {
+        padding-bottom: 50px;
+    }
+    .about h3 {
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .profile-img {
         height: 500px;
         border: thick solid rgba(0, 0, 0, 0.411);
     }
 }
+
+
+/* Navbar */
 
 .nav-bar {
     top: 0;
