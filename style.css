@@ -57,7 +57,7 @@ header {
 
 @media screen and (min-width: 600px) {
     .user-box h1 {
-        margin: 10px;
+        margin: 20px;
         font-size: 2.2rem;
     }
     .user-box p {
@@ -105,7 +105,9 @@ header {
 }
 
 @media screen and (min-width: 600px) {
-    padding-bottom: 50px;
+    .about {
+        padding-bottom: 50px;
+    }
 }
 
 .about h3 {
@@ -130,7 +132,7 @@ header {
     border: thick solid rgba(0, 0, 0, 0.411);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
     .profile-img {
         height: 500px;
         border: thick solid rgba(0, 0, 0, 0.411);
@@ -187,10 +189,10 @@ header {
 
 .socmed .fab {
     color: #FFFBEE;
-    font-size: 40px;
+    font-size: 30px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
     .socmed {
         display: none;
     }
@@ -200,7 +202,7 @@ header {
     display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
     .social-icons {
         display: block;
         top: 50%;
@@ -325,6 +327,16 @@ header {
     text-align: center;
     color: #FFFBEE;
     font-size: 1.1rem;
+}
+
+.competences>.row>div:nth-child(n+2) {
+    margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+    .competences>.row>div:nth-child(n+2) {
+        margin-top: 0;
+    }
 }
 
 .skills-bar p {
