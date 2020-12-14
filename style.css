@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mada&family=Playfair+Display&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Mada', sans-serif;
 }
 
 /* Header */
 header {
     height: 100vh;
+    background-color: #FFFBEE;
+    background-image: linear-gradient(#FFFBEE,#0072b3);
 }
 
 .user-box {
@@ -19,12 +23,23 @@ header {
 .user-box img {
     border-radius: 50%;
     width: 250px;
-    border: 5px solid #6caed5;
+    height: 250px;
+    border: 5px solid #0072b5;
 }
 
 .user-box h1 {
     font-weight: bold;
     margin: 10px;
+    color: #FFFBEE;
+    font-family: 'Playfair Display', serif;
+}
+
+.user-box p {
+    font-weight: 600;
+    margin: 10px;
+    color: #FFFBEE;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
 }
 
 .scroll-btn {
@@ -35,11 +50,12 @@ header {
     border: 2px solid;
     padding: 10px 10px 20px;
     border-radius: 30px;
+    color: #FFFBEE;
 }
 
 .scroll-bar span {
-    background-color: black;
-    border: 2px solid black;
+    background-color: #FFFBEE;
+    border: 2px solid #FFFBEE;
     font-size: 10px;
     border-radius: 30px;
 }
@@ -58,10 +74,21 @@ header {
     padding-top: 100px;
     /*padding-bottom: 50px;*/
     margin-bottom: -130px;
+    font-family: 'Mada', sans-serif;
+}
+
+.about h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.about p {
+    text-align: justify;
 }
 
 .profile-img {
-    height: 400px;
+    height: 500px;
+    border: thick solid rgba(0, 0, 0, 0.411);
 }
 
 .nav-bar {
@@ -71,7 +98,7 @@ header {
 }
 
 .navbar {
-    background-color: black;
+    background-color: #0072b5;
 }
 
 .navbar-brand img {
@@ -132,7 +159,7 @@ header {
     padding-top: 6px;
     margin-top: 5px;
     color: white;
-    background: black;
+    background: #0072b5;
 }
 
 .social-icons ul li:hover {
@@ -203,7 +230,9 @@ header {
 /* Contact */
 .contact {
     padding-top: 50px;
-    background: darkmagenta;
+    background-color: #FFFBEE;
+    background-image: linear-gradient(#FFFBEE,#0072b5);
+    color: darkslategray;
 }
 
 .contact .row {
@@ -214,6 +243,16 @@ header {
 .contact .col-md-4 .fa {
     padding: 10px;
     font-size: 40px;
+    color: darkslategray;
+}
+
+.contact a {
+    color: darkslategray;
+}
+
+.contact a:hover {
+    text-decoration: none;
+    color: #FFFBEE;
 }
 
 .contact .btn {
@@ -221,7 +260,7 @@ header {
     margin: 5px;
     border-radius: 30px;
     border: 2px solid white;
-    background: transparent;
+    background: #FFFBEE;
 }
 
 .contact .btn:focus {
@@ -229,23 +268,34 @@ header {
 }
 
 .contact .btn:hover {
-    border: 2px solid black !important;
-    background: black !important;
+    border: 2px solid #FFFBEE !important;
+    background: rgb(182, 204, 226) !important;
     transition: 0.6s;
+    color: #0072b5 !important;
 }
 
 .contact .btn .fa {
     margin-right: 10px;
+    color: darkslategray;
 }
 
 footer {
-    background: black;
+    background: #0072b5;
     height: 50px;
     margin-top: 50px;
     color: white;
     padding-top: 10px;
 }
 
+footer img {
+    height: 30px;
+}
+
 .fa-heart-o {
     color: red;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }

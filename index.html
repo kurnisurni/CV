@@ -17,10 +17,11 @@
     <!-- Header -->
     <header>
         <div class="container text-center">
+            <button onclick="myFunction()">Toggle dark mode</button>
             <div class="user-box">
-                <img src="/assets/84103873_10157485478653876_3374951624358232064_o.jpg">
+                <img src="/assets/foto.jpg">
                 <h1>Kurnia Elmstedt</h1>
-                <p>Programming student</p>
+                <p>An Aspiring Full Stack Web Developer</p>
             </div>
         </div>
         <div class="scroll-btn">
@@ -28,7 +29,7 @@
         </div>
     </header>
     <!-- User info section -->
-    <section id="user-info">
+    <section class="user" id="user-info">
         <section class="nav-bar">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#"><img src="/assets/logo-white.png"></a>
@@ -58,54 +59,39 @@
         <section class="about container" id="about">
             <div class="row">
                 <div class="col-md-6 text-center">
-                    <img src="/assets/foto.jpg" class="profile-img">
+                    <img src="/assets/foto-square.jpg" class="profile-img">
                 </div>
                 <div class="col-md-6">
                     <h3>WHO AM I?</h3>
-                    <p>I moved to Sweden a year ago and as a
-                        newcomer, to gain network and get a good
-                        job within my background is really difficult.
-                        Therefore, I want to learn and embrace a
-                        new expertise as I have a great interest in
-                        IT and coding. I find Foo Coding program is
-                        suit me best so I can reach my goal and
-                        opportunity to become a web developer
-                        nearly in the future.
-                        Additionally, I have a solid background
-                        from my past professional experiences in
-                        food technology and linguistic.
+                    <p> Thanks for coming by and checking my profile!<br>
+                        My name is Kurnia Elmstedt, an Indonesian origin who's residing in Sweden.
+                        Recently, I graduated from HVE in programming and I am looking for an opportunity to become a professional full stack web
+                        developer.<br>
+                        I have a great interest to embrace my professional career within the IT industry.<br> My dream is to make
+                        amazing web apps and to solve the problem through coding.<br>
+                        I would love to work and train in an environment, where agile practices are used.<br>
+                        Additionally, I have a solid background from my past professional experiences in food technology
+                        and linguistic.<br>My interests are food, travel, music, foreign languages and board games.<br><br>
                     </p>
-
-                    <div class="skills-bar">
-                        <p>HTML</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 80%;">80%</div>
-                        </div>
-                        <p>CSS</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 90%;">90%</div>
-                        </div>
-                        <p>Javascript</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 65%;">65%</div>
-                        </div>
-                        <p>Java</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 80%;">80%</div>
-                        </div>
-
-                    </div>
                 </div>
             </div>
-            </div>
         </section>
+                
         <!-- Social media -->
         <div class="social-icons">
             <ul>
-                <a href="#"><li><i class="fab fa-linkedin-in"></i></li></a>
-                <a href="#"><li><i class="fab fa-github"></i></li></a>
-                <a href="#"><li><i class="fab fa-instagram"></i></li></a>
-                <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+                <a href="https://linkedin.com/in/skurnia/" target="_blank" rel="noopener noreferrer">
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                </a>
+                <a href="https://github.com/kurnisurni" target="_blank" rel="noopener noreferrer">
+                    <li><i class="fab fa-github"></i></li>
+                </a>
+                <a href="https://www.instagram.com/kanios/" target="_blank" rel="noopener noreferrer">
+                    <li><i class="fab fa-instagram"></i></li>
+                </a>
+                <a href="https://twitter.com/kanios" target="_blank" rel="noopener noreferrer">
+                    <li><i class="fab fa-twitter"></i></li>
+                </a>
             </ul>
         </div>
         <!-- Resume -->
@@ -204,35 +190,110 @@
                     </div>
                 </div>
             </div>
+            <section class="competences container" id="competences">
+                <h3>My competences</h3>
+                <div class="row">
+                <div class="col-md-4 skills-bar">
+                    <h4>Technology skills</h4>
+                    <p>HTML</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;">80%</div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;">90%</div>
+                    </div>
+                    <p>Javascript</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 65%;">65%</div>
+                    </div>
+                    <p>Java</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 skills-bar">
+                    <h4>Language skills</h4>
+                    <p>HTML</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;">80%</div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;">90%</div>
+                    </div>
+                    <p>Javascript</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 65%;">65%</div>
+                    </div>
+                    <p>Java</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 skills-bar">
+                    <h4>Personality skills</h4>
+                    <p>HTML</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;">80%</div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;">90%</div>
+                    </div>
+                    <p>Javascript</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 65%;">65%</div>
+                    </div>
+                    <p>Java</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+            </div>
+       
+        
+     
+    </section>
         </section>
         <!-- Contact -->
         <section class="contact" id="contact">
             <div class="container text-center">
                 <h1>Contact me</h1>
-                <p class="text-center">Ypu can reach me here..</p>
+                <p class="text-center">You can reach me here..</p>
                 <div class="row">
                     <div class="col-md-4">
-                        <i class="fa fa-phone"></i>
-                        <p>+46 700398422</p>
+                        <i class="fa fa-phone"></i><br>
+                        <p><a href="tel:+46700398422">+46-700-398-422</a></p>
                     </div>
                     <div class="col-md-4">
                         <i class="fa fa-envelope"></i>
-                        <p>kurniasuryani@gmail.com</p>
+                        <p><a href="mailto:kurniasuryani@gmail.com">kurniasuryani@gmail.com</a></p>
                     </div>
                     <div class="col-md-4">
                         <i class="fa fa-globe"></i>
-                        <p>www.linkedin.com/in/skurnia/</p>
+                        <p><a href="https://kurnia-resume.herokuapp.com">My website</a></p>
                     </div>
-                </div>  
-                <button type="button" class="btn btn-primary"><i class="fa fa-download"></i>Resume</button>
-                <button type="button" class="btn btn-primary"><i class="fa fa-rocket"></i>Hire me</button>           
+                </div>
+                <button type="button" class="btn btn-primary"><i class="fa fa-download"></i><a
+                        href="assets/Kurnia CV.pdf" download> Resume</button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-rocket"></i><a
+                        href="mailto:kurniasuryani@gmail.com">Hire me</a></button>
             </div>
             <footer class="text-center">
-                <p>Made with <i class="fa fa-heart-o"></i> by KSE</p>
+                <p class="footer-text">Made with <i class="fa fa-heart-o"></i> by <img src="/assets/logo-white.png"></p>
             </footer>
         </section>
     </section>
 
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
 </body>
 
 </html>
