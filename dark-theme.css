@@ -139,6 +139,7 @@ header {
 
 .nav-bar {
     top: 0;
+    position: -webkit-sticky;
     position: sticky;
     z-index: 2;
 }
