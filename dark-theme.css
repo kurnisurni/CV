@@ -167,12 +167,12 @@ header {
 }
 
 .nav-link {
-    color: white !important;
+    color: white;
     font-weight: bold;
     font-family: 'Mada', sans-serif;
 }
 
-.nav-bar a.nav-link:hover {
+.nav-link:hover {
     opacity: 0.7;
 }
 
