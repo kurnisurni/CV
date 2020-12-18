@@ -168,7 +168,7 @@ header {
     font-family: 'Mada', sans-serif;
 }
 
-.nav-bar .nav-link:hover {
+.nav-bar a.nav-link:hover {
     opacity: 0.7;
 }
 
