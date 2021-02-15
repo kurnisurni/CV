@@ -3,10 +3,18 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Mada', sans-serif;
+}
+
+.container {
+    padding: 0 100px 0 100px;
 }
 
 
@@ -37,7 +45,12 @@ header {
     margin: 30px 10px 10px 10px;
     color: #FFFBEE;
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 3rem;
+    cursor: context-menu;
+}
+
+span.m-left {
+    margin-left: -5px;
 }
 
 .user-box p {
@@ -46,6 +59,26 @@ header {
     color: #FFFBEE;
     font-size: 1rem;
     font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+
+.user-box span {
+    display: inline-block;
+}
+
+.user-box span:hover {
+    color: #48cfad;
+    transition: all .5s;
+}
+
+.user-box span.name {
+    color: blue;
+}
+
+.user-box span.name:hover {
+    color: white;
+    transition: all .5s;
 }
 
 @media screen and (min-width: 600px) {
