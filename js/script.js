@@ -1,59 +1,41 @@
+// name animation
 const spans = document.querySelectorAll('h1 span')
 
-spans.forEach(index => index.addEventListener('mouseover', function(e){
+spans.forEach(index => index.addEventListener('mouseover', function(e) {
 
     index.classList.add('animated', 'rubberBand')
-} ))
+}))
 
-spans.forEach(index => index.addEventListener('mouseout', function(e){
+spans.forEach(index => index.addEventListener('mouseout', function(e) {
 
     index.classList.remove('animated', 'rubberBand')
-} ))
+}))
 
-const htmlBar = document.querySelector('.bar-html')
-const cssBar = document.querySelector('.bar-css')
-const jsBar = document.querySelector('.bar-javascript')
-const reactBar = document.querySelector('.bar-react')
+/*===== ACTIVE MENU =====*/
+const navLink = document.querySelectorAll('.nav-link');
 
-
-//For the Skill Bars
-var t1 = new TimelineLite()
-
-t1.fromTo(htmlBar, .75, {width: `calc(0% - 6px)`}, {width: `calc(90% - 6px)`, ease: Power4.easeout})
-    .fromTo(cssBar, .75, {width: `calc(0% - 6px)`}, {width: `calc(95% - 6px)`, ease: Power4.easeout})
-    .fromTo(jsBar, .75, {width: `calc(0% - 6px)`}, {width: `calc(75% - 6px)`, ease: Power4.easeout})
-    .fromTo(reactBar, .75, {width: `calc(0% - 6px)`}, {width: `calc(70% - 6px)`, ease: Power4.easeout})
-
-
-const controller = new ScrollMagic.Controller()
-const scene = new ScrollMagic.Scene({
-    triggerElement: '.skills',
-    triggerHook: 0
-}).setTween(t1).addTo(controller)
-
-
-function showRequiredCategory(event) {
-
-    const getId = event.id
-    const links = document.querySelectorAll('.work-category button')
-    for(i=0; i<links.length; i++){
-        if(links[i].hasAttribute('class')){
-            links[i].classList.remove('active')
-        }
-    }
-
-    event.classList.add('active')
-    const getCategory = document.querySelector(`.category-${getId}`)
-    const categories = document.querySelectorAll('div[class^= "category-"]')
-
-    for(i=0;i<categories.length; i++) {
-        if(categories[i].hasAttribute('class')){
-            categories[i].classList.remove('showCategory')
-            categories[i].classList.add('hideCategory')
-        }
-    }
-
-    getCategory.classList.remove('hideCategory')
-    getCategory.classList.add('showCategory')
-
+function linkAction() {
+    /*Active link*/
+    navLink.forEach(n => n.classList.remove('active'));
+    this.classList.add('active');
 }
+navLink.forEach(n => n.addEventListener('click', linkAction));
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+});
+
+
+/*SCROLL ABOUT*/
+sr.reveal('.about__img', {});
+sr.reveal('.about__subtitle', { delay: 400 });
+sr.reveal('.about__text', { delay: 400 });
+
+/*SCROLL ABOUT*/
+sr.reveal('.resume__subtitle', {});
+sr.reveal('.timeline', { delay: 400 });
+sr.reveal('.skills-bar', { delay: 400 });
