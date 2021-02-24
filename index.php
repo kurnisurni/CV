@@ -20,7 +20,6 @@
     <!-- Header -->
     <header>
         <div class="container text-center">
-            <button class="btn-toggle btn"><i class="fas fa-adjust"></i></button>
             <div class="user-box">
                 <img src="/assets/foto.jpg">
                 <h1 class="user__name-small">Hi, <br>I'm Kurnia!</h1>
@@ -565,7 +564,6 @@
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script src="/js/theme.js"></script>
     <script src="/js/animation.js"></script>
     <script src="/js/menu.js"></script>
     <script src="/js/portfolio.js"></script>
