@@ -1,12 +1,12 @@
 function bodyScrollingToggle() {
     document.body.classList.toggle("hidden-scrolling");
 }
-/*---------------- portfolio filter and popup -------------------*/
+
+//portfolio  popup
 
 (() => {
 
-    const filterContainer = document.querySelector(".portfolio-filter"),
-        portfolioItemsContainer = document.querySelector(".portfolio-items"),
+    const portfolioItemsContainer = document.querySelector(".portfolio-items"),
         portfolioItems = document.querySelectorAll(".portfolio-item"),
         popup = document.querySelector(".portfolio-popup"),
         prevBtn = popup.querySelector(".pp-prev"),
@@ -100,10 +100,6 @@ function bodyScrollingToggle() {
         const title = portfolioItems[itemIndex].querySelector(".portfolio-item-title").innerHTML;
         // set the project title
         popup.querySelector(".pp-title h2").innerHTML = title;
-        // get the project category
-        const category = portfolioItems[itemIndex].getAttribute("data-category");
-        // set the project category
-        popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
     }
 
     projectDetailsBtn.addEventListener("click", () => {

@@ -17,6 +17,10 @@ body {
     padding: 0 100px 0 100px;
 }
 
+.row {
+    padding: 20px 20px 100px 20px;
+}
+
 .section-title {
     position: relative;
     margin-top: 1rem;
@@ -62,9 +66,9 @@ header {
 
 .user-box h1.user__name-small {
     font-weight: bold;
-    margin: 30px 10px 10px 10px;
     color: #FFFBEE;
     font-size: 2.2rem;
+    margin: revert;
 }
 
 .user-box h1.user__name-medium {
@@ -152,7 +156,21 @@ header {
 /* About */
 
 .about {
-    padding-top: 50px;
+    padding-top: 250px;
+    margin-top: -200px;
+}
+
+@media screen and (min-width: 992px) {
+    .about {
+        padding-top: 50px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .about__img {
+        padding-top: 70px;
+    }
 }
 
 .section-title {
@@ -160,13 +178,12 @@ header {
 }
 
 .about__subtitle {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
 .about__img {
     justify-self: center;
-    padding-top: 70px;
 }
 
 .about__img img {
@@ -233,6 +250,12 @@ header {
         width: 80px;
         transition: 1s;
     }
+}
+
+.about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about__btn {
@@ -316,6 +339,7 @@ button.about__btn:focus {
     position: -webkit-sticky;
     position: sticky;
     z-index: 2;
+    align-self: flex-start;
 }
 
 .navbar {
@@ -363,25 +387,23 @@ button.about__btn:focus {
     background-color: #44f1c6;
 }
 
-
-/* .active::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0.18rem;
-    left: 0;
-    top: 2rem;
-    background-color: #44f1c6;
-} */
+.navbar li.active>a {
+    color: #44f1c6;
+}
 
 
 /* Resume */
 
 .resume {
-    margin-top: -50px;
-    padding-top: auto;
-    padding-bottom: 30px;
+    padding-top: 100px;
     background: #f9f9f9;
+}
+
+@media screen and (min-width: 992px) {
+    .resume {
+        padding-top: 50px;
+        margin-top: 0;
+    }
 }
 
 .resume h3 {
@@ -502,7 +524,7 @@ button.about__btn:focus {
 /* Contact */
 
 .contact {
-    padding-top: 100px;
+    padding-top: 50px;
     background-color: #f9f9f9;
     color: darkslategray;
 }
@@ -554,7 +576,7 @@ portfolio section
 ---------------------*/
 
 .portfolio-section {
-    padding: 80px 0 80px;
+    padding: 100px 0 80px;
     min-height: 100vh;
 }
 
@@ -924,6 +946,9 @@ portfolio section
 /* RESPONSIVE */
 
 @media(max-width: 991px) {
+    .portfolio-section {
+        padding: 50px 0 80px;
+    }
     .portfolio-section .portfolio-item {
         flex: 0 0 50%;
         max-width: 50%;
