@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="animate.css" />
     <link rel="stylesheet" href="light-theme.css" id="theme-link">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="icon" type="image/png" href="/assets/favicon.png" sizes="20x20">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -21,7 +20,7 @@
     <!-- Header -->
     <header>
         <div class="container text-center">
-            <button class="btn-toggle btn"><i class="fas fa-moon"></i>/<i class="fas fa-sun"></i></button>
+            <button class="btn-toggle btn"><i class="fas fa-adjust"></i></button>
             <div class="user-box">
                 <img src="/assets/foto.jpg">
                 <h1 class="user__name-small">Hi, <br>I'm Kurnia!</h1>
@@ -506,6 +505,37 @@
         </section>
         <!-- portfolio section end -->
 
+        <!-- portfolio popup start -->
+        <div class="pp portfolio-popup">
+            <div class="pp-details">
+                <div class="pp-details-inner">
+                    <div class="pp-title">
+                        <h2></h2>
+                    </div>
+                    <div class="pp-project-details">
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="pp-main">
+                <div class="pp-main-inner">
+                    <div class="pp-project-details-btn">Project Details <i class="fas fa-plus"></i></div>
+                    <div class="pp-close">&times;</div>
+                    <img src="#" alt="img" class="pp-img">
+                    <div class="pp-counter"></div>
+                </div>
+                <div class="pp-loader">
+                    <div></div>
+                </div>
+                <!-- pp navigation -->
+                <div class="pp-prev"><i class="fas fa-play"></i></div>
+                <div class="pp-next"><i class="fas fa-play"></i></div>
+            </div>
+        </div>
+        <!-- portfolio popup end -->
+
         <!-- Contact -->
         <section class="contact" id="contact">
             <div class="container text-center">
@@ -532,44 +562,15 @@
         </section>
     </section>
 
-    <!-- portfolio popup start -->
-    <div class="pp portfolio-popup">
-        <div class="pp-details">
-            <div class="pp-details-inner">
-                <div class="pp-title">
-                    <h2></h2>
-                </div>
-                <div class="pp-project-details">
-                </div>
-            </div>
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="pp-main">
-            <div class="pp-main-inner">
-                <div class="pp-project-details-btn">Project Details <i class="fas fa-plus"></i></div>
-                <div class="pp-close">&times;</div>
-                <img src="#" alt="img" class="pp-img">
-                <div class="pp-counter"></div>
-            </div>
-            <div class="pp-loader">
-                <div></div>
-            </div>
-            <!-- pp navigation -->
-            <div class="pp-prev"><i class="fas fa-play"></i></div>
-            <div class="pp-next"><i class="fas fa-play"></i></div>
-        </div>
-    </div>
-    <!-- portfolio popup end -->
+    <script src="/js/theme.js"></script>
 
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+
     <script src="/js/animation.js"></script>
     <script src="/js/menu.js"></script>
     <script src="/js/portfolio.js"></script>
-    <script src="/js/theme.js"></script>
 
 </body>
 
