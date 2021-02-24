@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    padding: 0 100px 0 100px;
+    padding: 20px;
 }
 
 .row {
@@ -813,7 +813,7 @@ footer img {
         cursor: context-menu;
     }
     span.m-left {
-        margin-left: -12px;
+        margin-left: -8px;
     }
     .user-box h1.user__name-small {
         display: none;
@@ -861,6 +861,9 @@ footer img {
 }
 
 @media screen and (min-width: 992px) {
+    .container {
+        padding: 0 100px 0 100px;
+    }
     .about {
         padding-top: 50px;
         margin-top: 0;
