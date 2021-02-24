@@ -1,23 +1,24 @@
 {
-    "name": "CV",
-    "version": "1.0.0",
-    "description": "My resume and portfolio",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/kurnisurni/CV.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/kurnisurni/CV/issues"
-    },
-    "homepage": "https://github.com/kurnisurni/CV",
-    "dependencies": {
-        "express": "^4.17.1"
-    }
+  "name": "CV",
+  "version": "1.0.0",
+  "description": "My resume and portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurnisurni/CV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurnisurni/CV/issues"
+  },
+  "homepage": "https://github.com/kurnisurni/CV",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
 }
