@@ -562,12 +562,10 @@
         </section>
     </section>
 
-    <script src="/js/theme.js"></script>
-
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-
+    <script src="/js/theme.js"></script>
     <script src="/js/animation.js"></script>
     <script src="/js/menu.js"></script>
     <script src="/js/portfolio.js"></script>
